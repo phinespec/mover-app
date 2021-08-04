@@ -7,5 +7,17 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.mover.view.home.HomeFragment"
-        android:label="HomeFragment" />
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.mover.detail.DetailFragment"
+        android:label="DetailFragment" >
+        <argument
+            android:name="mover"
+            app:argType="com.example.mover.model.database.Mover" />
+    </fragment>
 </navigation>

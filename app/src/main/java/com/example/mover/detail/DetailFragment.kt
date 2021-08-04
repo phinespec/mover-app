@@ -14,7 +14,7 @@ import com.example.mover.model.database.MoverDatabase
 import com.example.mover.view.home.HomeViewModel
 import com.example.mover.view.home.HomeViewModelFactory
 
-class HomeFragment : Fragment() {
+class DetailFragment : Fragment()
 
     private lateinit var binding: HomeFragmentBinding
     private lateinit var viewModel: HomeViewModel
