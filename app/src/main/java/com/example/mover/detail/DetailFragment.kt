@@ -14,7 +14,7 @@ import com.example.mover.model.database.MoverDatabase
 import com.example.mover.view.home.HomeViewModel
 import com.example.mover.view.home.HomeViewModelFactory
 
-class DetailFragment : Fragment()
+class DetailFragment : Fragment() {
 
     private lateinit var binding: HomeFragmentBinding
     private lateinit var viewModel: HomeViewModel
@@ -30,13 +30,15 @@ class DetailFragment : Fragment()
 
         val viewModelFactory = HomeViewModelFactory(dataSource, application)
 
+        binding.lifecycleOwner = this
 
         viewModel.selectedMover.observe(viewLifecycleOwner, Observer {
             it?.let { mover ->
-                this.findNavController().navigate()
+//                this.findNavController().navigate()
             }
 
         })
+
 
         return binding.root
     }
