@@ -35,9 +35,10 @@ class HomeFragment : Fragment() {
 
         viewModel.selectedMover.observe(viewLifecycleOwner, Observer {
             it?.let { mover ->
-                // Print the mover
-                Timber.i("Mover name => ${mover.firstName}")
-
+                // Navigate to detail fragment
+                this.findNavController().navigate(
+                    HomeFragmentDirections.actionHomeFragmentToDetailFragment(mover))
+                viewModel.navigationComplete()
             }
 
         })
