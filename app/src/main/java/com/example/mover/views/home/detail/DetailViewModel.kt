@@ -1,10 +1,10 @@
-package com.example.mover.detail
+package com.example.mover.views.home.detail
 
 import android.app.Application
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.mover.model.database.Mover
+import com.example.mover.Network.Mover
 import com.example.mover.model.database.MoverDao
 
 class DetailViewModel(

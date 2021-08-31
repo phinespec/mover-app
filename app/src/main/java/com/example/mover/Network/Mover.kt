@@ -1,4 +1,4 @@
-package com.example.mover.model.database
+package com.example.mover.Network
 
 import android.os.Parcelable
 import androidx.room.ColumnInfo
@@ -16,15 +16,21 @@ data class Mover (
     @ColumnInfo(name="image_name")
     var imageName: String = "placeholder",
 
-    @ColumnInfo(name = "first_name")
-    var firstName: String,
-
-    @ColumnInfo(name = "last_name")
-    var lastName: String,
+    @ColumnInfo(name = "name")
+    var name: String,
 
     @ColumnInfo(name = "address")
     var address: String,
 
+    @ColumnInfo(name= "email")
+    var email: String,
+
+    @ColumnInfo(name= "phone_number")
+    var phoneNumber: String,
+
     @ColumnInfo(name = "money_owed")
     var moneyOwed: Double?
+
 ) : Parcelable
+
+

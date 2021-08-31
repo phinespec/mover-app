@@ -1,4 +1,4 @@
-package com.example.mover.view.home
+package com.example.mover.views.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,7 +12,6 @@ import androidx.navigation.fragment.findNavController
 import com.example.mover.R
 import com.example.mover.databinding.HomeFragmentBinding
 import com.example.mover.model.database.MoverDatabase
-import timber.log.Timber
 
 class HomeFragment : Fragment() {
 

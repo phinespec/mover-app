@@ -1,10 +1,9 @@
-package com.example.mover.detail
+package com.example.mover.views.home.detail
 
 import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.mover.model.database.MoverDao
-import com.example.mover.view.home.HomeViewModel
 
 class DetailViewModelFactory(
     private val dataSource: MoverDao,

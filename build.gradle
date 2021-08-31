@@ -7,6 +7,8 @@ buildscript {
         version_room = "2.3.0"
         version_lifecycle = "2.2.0"
         version_timber = "4.7.1"
+        version_retrofit = "2.9.0"
+        version_moshi = "1.9.3"
     }
 
 

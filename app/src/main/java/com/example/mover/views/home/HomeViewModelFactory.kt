@@ -1,4 +1,4 @@
-package com.example.mover.view.home
+package com.example.mover.views.home
 
 import android.app.Application
 import androidx.lifecycle.ViewModel

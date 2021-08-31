@@ -1,4 +1,4 @@
-package com.example.mover.view.home
+package com.example.mover.views.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mover.R
 import com.example.mover.databinding.ListItemMoverBinding
-import com.example.mover.model.database.Mover
+import com.example.mover.Network.Mover
 
 class MoverAdapter (
     val viewModel: HomeViewModel
@@ -43,7 +43,7 @@ class MoverAdapter (
             var moverName = binding.moverName
             var avatar = binding.moverAvatar
 
-            moverName.text = item.firstName + item.lastName
+            moverName.text = item.name
             avatar.setImageResource(R.drawable.placeholder)
 
 

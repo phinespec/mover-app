@@ -1,4 +1,4 @@
-package com.example.mover.detail
+package com.example.mover.views.home.detail
 
 import android.os.Bundle
 import android.view.LayoutInflater
